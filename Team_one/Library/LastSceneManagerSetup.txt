@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/lanou3g/Desktop/Chapter05/3D Rocks/Assets/Free_Rocks/demo.unity
+  isLoaded: 1
+  isActive: 1
