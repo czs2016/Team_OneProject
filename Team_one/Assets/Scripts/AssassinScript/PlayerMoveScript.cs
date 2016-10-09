@@ -4,10 +4,13 @@ using System.Collections;
 public class PlayerMoveScript : MonoBehaviour
 {
 
-    //移动速度
+    //**移动速度
     public float moveSpeed;
     //旋转速度
     public float rotateSpeed;
+
+    //记录初始的移动速度
+    public float originSpeed;
 
     //动画
     Animator anim;
@@ -18,7 +21,7 @@ public class PlayerMoveScript : MonoBehaviour
 
     void Start () {
         anim = GetComponent<Animator> ();
-
+        originSpeed = moveSpeed;
     }
 
     void Update () {

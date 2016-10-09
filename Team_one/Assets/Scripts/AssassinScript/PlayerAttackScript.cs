@@ -5,7 +5,7 @@ public class PlayerAttackScript : MonoBehaviour
 {
     //动画
     Animator anim;
-
+    //拖尾效果
     TrailRenderer trail;
 
     void Start () {
@@ -22,13 +22,15 @@ public class PlayerAttackScript : MonoBehaviour
             anim.SetBool (AssassinHashIDs.HashID_isAttack, true);
             
         }
-        if (anim.GetBool (AssassinHashIDs.HashID_isAttack) == true && anim.GetBool (AssassinHashIDs.HashID_isRun) == true) {
+        if (anim.GetBool (AssassinHashIDs.HashID_isAttack) == true
+            && anim.GetBool (AssassinHashIDs.HashID_isRun) == true) {
+
             anim.SetBool (AssassinHashIDs.HashID_isAttack, false);
-            trail.enabled = false;
+            //trail.enabled = false;
         }
-        if (anim.GetBool (AssassinHashIDs.HashID_isAttack)==true) {
-            trail.enabled = true;
-        }
+        //if (anim.GetBool (AssassinHashIDs.HashID_isAttack)==true) {
+        //    trail.enabled = true;
+        //}
 
     }
 
